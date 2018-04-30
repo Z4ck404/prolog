@@ -1,6 +1,9 @@
 %derivation des fonctions ppolynomialles :
 num(n):-member(n,[1,2,3,4,5,6,7,8,9,0]).
+%num(n):-atomic(n). %est mieux mais elle ne marche pas avec quelques version de SWI-Prolog!
+%derivee de la focntion identite est 1 .
 der(x,x,1).
+%derivee d'une canstante est nulle.
 der(n,x,0):-num(n).
 der(n*F,x,D):-der(F,x,df),num(n),D is n*df.
 der(F+G,x,dfg):- der(F,x,df),der(G,x,dg),dfg is df+dg.
