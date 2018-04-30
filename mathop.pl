@@ -6,7 +6,7 @@ der(n*F,x,D):-der(F,x,df),num(n),D is n*df.
 der(F+G,x,dfg):- der(F,x,df),der(G,x,dg),dfg is df+dg.
 der(F*G,x,dfg):-der(F,x,df),der(G,x,dg),dfg is (F*dg+G*df).
 der(F/G,x,dfg):-der(F,x,df),der(G,x,dg),dfg is (df*G-dg*F)/(G*G).
-%derivation des fonctions trigonometriques :
+%derivation des fonctions trigonometriques( en cours de modification )  :
 %der(sin(x),x,0):- number(x).
 %der(cos(x),x,0):- number(x).
 %der(sin(x),x,cos(x)).
