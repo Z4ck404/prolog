@@ -1,3 +1,3 @@
 # prolog
-simple examples with prolog 
-Vous devez installer le moteur d'inferences SWI-PROLOG pour pouvoir "compiler" ces ligne de codes en Prolog.
+des examples simples avec prolog ;
+Vous devez installer le moteur d'inferences SWI-PROLOG pour pouvoir "compiler" ces lignes de codes en Prolog.
