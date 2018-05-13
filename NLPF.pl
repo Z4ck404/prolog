@@ -42,9 +42,9 @@ cnom(R,R,_,_).
 adjs([A|R],S,G,N):-adj(A,G,N),adjs(R,S,G,N).
 adjs(P,P,_,_).
 adj(A,G,N):-member(A,["petit","grand"]),G=m,N=s,write(adjectif__).
-adj(A,G,N):-member(A,["petite","grande"]),G=f,N=s.
+adj(A,G,N):-member(A,["petite","grande"]),G=f,N=s,write(adjectif__).
 adj(A,G,N):-member(A,["petits","grands"]),G=m,N=p,write(adjectif__).
-adj(A,G,N):-member(A,["petites","grandes"]),G=f,N=p.
+adj(A,G,N):-member(A,["petites","grandes"]),G=f,N=p,write(adjectif__).
 
 
 
