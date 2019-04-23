@@ -13,7 +13,7 @@ pps([P|S],S,G,N):-member(P,["nous","vous","ils"]),G=m,N=p,write(pren_perso__).
 %syntagme_nominal :
 sn(P,S,_,_):-det(P,R1,G,N),adjs(R1,R2,G,N),nom(R2,R3,G,N),adjs(R3,R4,G,N),cnom(R4,S,G,N).
 nom([R|S],S,G,N):-member(R,["ali","jawad","steve","chat"]),G=m,N=s,write(nom__).
-nom([R|S],S,G,N):-member(R,["hajar","pomme","table"]),G=f,N=s,write(nom__).
+nom([R|S],S,G,N):-member(R,["cathrine","pomme","table"]),G=f,N=s,write(nom__).
 gv(P,S,_,_):-verbeetat(P,R1,_,_),attribut(R1,R2,_,_),ccir(R2,S,_,_).
 gv(P,S,G1,N1):-verbe(P,R1,G1,N1),cod(R1,R2,_,_),coi(R2,R3,_,_),ccir(R3,S,_,_).
 verbe([P|R],R,m,s):-member(P,["mange","prend"]),write(verbe__).
